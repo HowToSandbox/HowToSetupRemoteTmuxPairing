@@ -1,5 +1,7 @@
 TMUX
 https://www.howtoforge.com/sharing-terminal-sessions-with-tmux-and-screen
+
+
 List Sessions:
 tmux ls
 
@@ -39,3 +41,13 @@ d  detach
 t  big clock
 ?  list shortcuts
 :  prompt
+
+Source .tmux.conf
+{prefix}+ :
+:source-file ~/.tmux.conf
+or
+tmux source-file ~/.tmux.conf
+
+
+Send input to multiple panes at the same time
+{prefix}+a
