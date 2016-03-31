@@ -1,0 +1,41 @@
+TMUX
+https://www.howtoforge.com/sharing-terminal-sessions-with-tmux-and-screen
+List Sessions:
+tmux ls
+
+Create: tmux new-session -s {sessionName}
+Attach: tmux attach-session -t {sessionName}
+
+https://gist.github.com/MohamedAlaa/2961058
+PREFIX: Control-b
+
+Tabs:
+{PREFIX}+o	Move between panes
+{PREFIX}+%	Vertical split
+{PREFIX}+"	Horizontal split
+{PREFIX}+x	Kill pane
+
+Windows:
+{PREFIX}+n	Next Window
+{PREFIX}+p	Previous Window
+{PREFIX}+c	Create Window
+{PREFIX}+,	Name Window
+{PREFIX}+w	List Windows
+
+Resize Panes:
+PREFIX : resize-pane -D (Resizes the current pane down)
+PREFIX : resize-pane -U (Resizes the current pane upward)
+PREFIX : resize-pane -L (Resizes the current pane left)
+PREFIX : resize-pane -R (Resizes the current pane right)
+PREFIX : resize-pane -D 20 (Resizes the current pane down by 20 cells)
+PREFIX : resize-pane -U 20 (Resizes the current pane upward by 20 cells)
+PREFIX : resize-pane -L 20 (Resizes the current pane left by 20 cells)
+PREFIX : resize-pane -R 20 (Resizes the current pane right by 20 cells)
+PREFIX : resize-pane -t 2 20 (Resizes the pane with the id of 2 down by 20 cells)
+PREFIX : resize-pane -t -L 20 (Resizes the pane with the id of 2 left by 20 cells)
+
+Misc:
+d  detach
+t  big clock
+?  list shortcuts
+:  prompt
