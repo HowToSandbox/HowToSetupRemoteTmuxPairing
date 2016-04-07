@@ -63,3 +63,16 @@ tmux -V #get the current version number
  exec bash
  ```
  
+ 
+ 
+ ### Make is easy to attach to a session
+
+ Add this to your .bashrc or .bash_profile, then source the file.
+ 
+ ```
+ function attach()
+{
+   tmux attach-session -t $1
+}
+ ```
+ 
