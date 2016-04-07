@@ -43,3 +43,23 @@ usermod -a -G pairing User2
 tmux -S /tmp/remotepairing new -s pairingSession 		#User1
 tmux -S /tmp/remotepairing attach -t pairingSession 	#User2
 ```
+
+
+
+### Install 2.1 on Ubuntu
+
+```
+tmux -V # Get the old version number
+sudo apt-get update && apt-get -y remove tmux
+sudo wget https://github.com/tmux/tmux/releases/download/2.1/tmux-2.1.tar.gz && tar xvf tmux-2.1.tar.gz && cd tmux-2.1
+./configure && make
+sudo make install 
+tmux -V #get the current version number
+``` 
+
+#### If you go not get back 2.1 do the following
+ 
+ ```
+ exec bash
+ ```
+ 
