@@ -47,7 +47,14 @@ Source .tmux.conf
 :source-file ~/.tmux.conf
 or
 tmux source-file ~/.tmux.conf
+or 
+{prefix}+r
 
 
 Send input to multiple panes at the same time
 {prefix}+a
+
+
+Turn mouse mode on/off
+{prefix}+m (on)
+{prefix}+M (off)
